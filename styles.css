@@ -1,90 +1,71 @@
-/* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ece9e6, #ffffff);
-    color: #333;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header {
-    margin-bottom: 20px;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-    color: #2b5876;
-  }
-  
-  header p {
-    font-size: 1.2em;
-    color: #4e4376;
-  }
-  
-  main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.2s;
-    text-align: center;
-  }
-  
-  .card h2 {
-    font-size: 1.5em;
-    color: #333;
-  }
-  
-  .card p {
-    font-size: 1em;
-    color: #666;
-  }
-  
-  .card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    text-decoration: none;
-    background: #2b5876;
+    line-height: 1.6;
+}
+header {
+    background: #333;
     color: #fff;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .card a:hover {
-    background: #4e4376;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .screenshot {
-    margin-top: 15px;
-  }
-  
-  .screenshot img {
-    max-width: 100%;
-    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+nav a:hover {
+    background: #555;
+}
+.container {
+    padding: 20px;
+}
+.site-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
-  }
-  
-  footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #888;
-  }
-  
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.site-section img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.site-section .details {
+    flex: 1;
+}
+.site-section .details h3 {
+    margin: 0 0 10px;
+}
+.site-section .details p {
+    margin: 5px 0;
+}
+.site-section .join-button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.site-section .join-button:hover {
+    background: #0056b3;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
